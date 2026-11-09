@@ -3,7 +3,7 @@ import beeOnTimeImg from '@/assets/images/BeeOnTime.png'
 import cloudStockImg from '@/assets/images/CloudStock.png'
 import smartFarmImg from '@/assets/images/SmartFarm.png'
 import vereditoImg from '@/assets/images/Veredito.png'
-import surfaceImg from '@/assets/images/Surface.png'
+import surfaceImg from '@/assets/images/Surface.jpeg'
 import type { Project } from '@/types'
 
 export const projectsSection = {
