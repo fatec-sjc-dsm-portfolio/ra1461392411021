@@ -3,6 +3,7 @@ import beeOnTimeImg from '@/assets/images/BeeOnTime.png'
 import cloudStockImg from '@/assets/images/CloudStock.png'
 import smartFarmImg from '@/assets/images/SmartFarm.png'
 import vereditoImg from '@/assets/images/Veredito.png'
+import surfaceImg from '@/assets/images/Surface.png'
 import type { Project } from '@/types'
 
 export const projectsSection = {
@@ -138,7 +139,7 @@ export const projects: Project[] = [
     type: "professional",
     category: "Desktop",
     description: 
-      "Programa desenvolvido para um cliente Autaza voltado para a inspeção de CAD's, que permite a análise de possíveis diferenças entre o que deveria ter sido feito e o que foi realmente feito, detecção de defeitos e geração de relatórios detalhados. O software é utilizado por engenheiros e técnicos para garantir a qualidade e a conformidade dos produtos fabricados.",
+      "Programa destinado à detecção de não conformidades em malhas virtuais, por meio da avaliação de desvios em padrões de franjas em relação a critérios predefinidos. A aplicação permite que os usuários carreguem e sobreponham imagens de referência e imagens avaliadas, além de medir automaticamente os desvios entre as imagens e entre as franjas correspondentes nas áreas selecionadas.",
     contribution: 
       "Responsável pelo desenvolvimento do frontend e backend do software, implementando algoritmos de análise utilizando visão computacional. Também participei da definição da arquitetura do sistema e da criação de interfaces intuitivas para os usuários.",
     softSkills:
@@ -148,5 +149,6 @@ export const projects: Project[] = [
       "pyside",
       "opencv"
     ],
+    image: surfaceImg,
   },
 ];
