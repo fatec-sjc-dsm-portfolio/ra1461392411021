@@ -5,13 +5,14 @@ import SubsectionHeading from '@/components/ui/SubsectionHeading'
 import TimelineCard from '@/components/ui/TimelineCard'
 import { about, education, experience } from '@/data/about'
 import { site } from '@/data/site'
+import { stagger } from '@/lib/reveal'
 import type { TimelineItem } from '@/types'
 
 function ProfilePhoto() {
   const [failed, setFailed] = useState(false)
 
   return (
-    <div className="relative mx-auto w-48 shrink-0 sm:w-52">
+    <div data-reveal="left" className="relative mx-auto w-48 shrink-0 sm:w-52">
       {/* Offset outline frame behind the photo */}
       <span
         aria-hidden
@@ -38,8 +39,8 @@ function TimelineList({ title, items }: { title: string; items: TimelineItem[] }
     <div>
       <SubsectionHeading>{title}</SubsectionHeading>
       <ul className="flex flex-col gap-6">
-        {items.map((item) => (
-          <li key={`${item.title}-${item.period}`}>
+        {items.map((item, i) => (
+          <li key={`${item.title}-${item.period}`} data-reveal style={stagger(i)}>
             <TimelineCard {...item} />
           </li>
         ))}
@@ -56,12 +57,14 @@ export default function About() {
 
         <div className="flex flex-col">
           <div className="space-y-5 leading-relaxed tracking-wide text-zinc-100">
-            {about.bio.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
+            {about.bio.map((paragraph, i) => (
+              <p key={paragraph} data-reveal="right" style={stagger(i)}>
+                {paragraph}
+              </p>
             ))}
           </div>
 
-          <p className="mt-8 flex items-center gap-3 tracking-wide text-zinc-100">
+          <p data-reveal="right" className="mt-8 flex items-center gap-3 tracking-wide text-zinc-100">
             <LuSparkles aria-hidden className="size-5 shrink-0 text-white" />
             <span>
               <strong className="font-semibold text-white">{about.interestsLabel}</strong>{' '}
@@ -73,6 +76,7 @@ export default function About() {
             href={about.resume.url}
             target="_blank"
             rel="noreferrer"
+            data-reveal
             className="glass mt-10 self-center rounded-lg px-6 py-2 tracking-wide transition hover:-translate-y-0.5 hover:border-bright-purple/70"
           >
             {about.resume.label}

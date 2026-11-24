@@ -101,9 +101,50 @@
   }
 }
 
+/*
+ * Scroll reveal: any [data-reveal] element starts hidden and slides in once
+ * useScrollReveal marks it [data-revealed]. data-reveal="left" / "right" sets
+ * the direction (default: up); --reveal-delay staggers items in a list.
+ * Uses an animation (not a transition) so it doesn't fight hover effects.
+ */
+[data-reveal] {
+  --reveal-x: 0;
+  --reveal-y: 2rem;
+  opacity: 0;
+}
+
+[data-reveal='left'] {
+  --reveal-x: -2.5rem;
+  --reveal-y: 0;
+}
+
+[data-reveal='right'] {
+  --reveal-x: 2.5rem;
+  --reveal-y: 0;
+}
+
+[data-reveal][data-revealed] {
+  animation: reveal-in 0.8s cubic-bezier(0.22, 1, 0.36, 1) var(--reveal-delay, 0s) both;
+}
+
+@keyframes reveal-in {
+  from {
+    opacity: 0;
+    transform: translate(var(--reveal-x), var(--reveal-y));
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  [data-reveal] {
+    opacity: 1;
   }
 
   *,

@@ -4,6 +4,7 @@ import ProjectModal from '@/components/projects/ProjectModal'
 import Section from '@/components/ui/Section'
 import SubsectionHeading from '@/components/ui/SubsectionHeading'
 import { projects, projectsSection } from '@/data/projects'
+import { stagger } from '@/lib/reveal'
 import type { Project, ProjectType } from '@/types'
 
 const groups: { type: ProjectType; title: string }[] = [
@@ -25,8 +26,8 @@ export default function Projects() {
             <div key={type}>
               <SubsectionHeading>{title}</SubsectionHeading>
               <ul className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                {items.map((project) => (
-                  <li key={project.id}>
+                {items.map((project, i) => (
+                  <li key={project.id} data-reveal style={stagger(i % 3)}>
                     <ProjectCard project={project} onOpen={setSelected} />
                   </li>
                 ))}

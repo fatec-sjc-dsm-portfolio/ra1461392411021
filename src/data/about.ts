@@ -38,7 +38,7 @@ export const education: TimelineItem[] = [
     organization: 'ETEC Professora Ilza Nascimento Pintus',
     period: '2020 - 2023',
     description:
-      'Curso técnico direcionado à lógica de programação, ao desenvolvimento de sistemas e a banco de dados. Formação que proporcionou a base para minha entrada no mercado de tecnologia e o ingresso na graduação em Desenvolvimento de Software Multiplataforma (DSM).',
+      'Curso técnico direcionado à lógica de programação, ao desenvolvimento de sistemas e a banco de dados. Formação que proporcionou a base para minha entrada no mercado de tecnologia e o ingresso na graduação ainda na área de TI.',
   },
 ]
 
