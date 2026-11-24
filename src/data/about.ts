@@ -1,5 +1,5 @@
 import resumePdf from '@/assets/docs/resume.pdf'
-import profilePhoto from '@/assets/images/profile.jpg'
+import profilePhoto from '@/assets/images/profile.jpeg'
 import type { TimelineItem } from '@/types'
 
 export const about = {

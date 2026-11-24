@@ -55,13 +55,13 @@ export default function About() {
         <ProfilePhoto />
 
         <div className="flex flex-col">
-          <div className="space-y-5 leading-relaxed tracking-wide text-zinc-200">
+          <div className="space-y-5 leading-relaxed tracking-wide text-zinc-100">
             {about.bio.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}
           </div>
 
-          <p className="mt-8 flex items-center gap-3 tracking-wide text-zinc-200">
+          <p className="mt-8 flex items-center gap-3 tracking-wide text-zinc-100">
             <LuSparkles aria-hidden className="size-5 shrink-0 text-white" />
             <span>
               <strong className="font-semibold text-white">{about.interestsLabel}</strong>{' '}

@@ -15,7 +15,7 @@ export default function Header() {
                 href={href}
                 aria-label={label}
                 title={label}
-                className="flex size-9 items-center justify-center rounded-full text-zinc-200 transition-colors hover:bg-white/10 hover:text-white focus-visible:bg-white/10 focus-visible:outline-none"
+                className="flex size-9 items-center justify-center rounded-full text-white transition-colors hover:bg-white/10 hover:text-white focus-visible:bg-white/10 focus-visible:outline-none"
               >
                 <Icon className="size-[18px]" />
               </a>

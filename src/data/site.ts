@@ -12,6 +12,7 @@ export const hero = {
   greeting: 'Olá! Me chamo',
   rolePrefix: 'Sou',
   role: 'Desenvolvedora de Software',
+  additionalInfo: 'Do design à arquitetura e ao código, crio produtos digitais completos. ',
   scrollHint: 'Desça para explorar',
 }
 

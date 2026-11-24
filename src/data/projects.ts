@@ -4,6 +4,7 @@ import cloudStockImg from '@/assets/images/CloudStock.png'
 import smartFarmImg from '@/assets/images/SmartFarm.png'
 import vereditoImg from '@/assets/images/Veredito.png'
 import surfaceImg from '@/assets/images/Surface.jpeg'
+import variskillImg from '@/assets/images/VariSkill.png'
 import type { Project } from '@/types'
 
 export const projectsSection = {
@@ -27,7 +28,7 @@ export const projectsSection = {
 export const projects: Project[] = [
   {
     id: 'smart-farm',
-    title: 'SmartFarm',
+    title: 'SmartFarm | API 1ºSEM/2024',
     type: 'academic',
     category: 'Website',
     description:
@@ -48,7 +49,7 @@ export const projects: Project[] = [
   },
   {
     id: 'cloud-stock',
-    title: 'CloudStock',
+    title: 'CloudStock | API 2ºSEM/2024',
     type: 'academic',
     category: 'Website',
     description:
@@ -69,7 +70,7 @@ export const projects: Project[] = [
   },
   {
     id: 'beeontime',
-    title: 'BeeOnTime',
+    title: 'BeeOnTime | API 3ºSEM/2025',
     type: 'academic',
     category: 'Website',
     description:
@@ -92,7 +93,7 @@ export const projects: Project[] = [
   },
   {
     id: 'atmos',
-    title: 'Atmos',
+    title: 'Atmos | API 4ºSEM/2025',
     type: 'academic',
     category: 'Website',
     description:
@@ -114,7 +115,7 @@ export const projects: Project[] = [
   },
   {
     id: 'veredito',
-    title: 'Veredito',
+    title: 'Veredito | API 5ºSEM/2026',
     type: 'academic',
     category: 'Aplicativo Mobile',
     description:
@@ -132,6 +133,29 @@ export const projects: Project[] = [
     ],
     image: vereditoImg,
     repoUrl: 'https://github.com/SkyFlyTeam/veredito-documentation',
+  },
+  {
+    id: 'variskill',
+    title: 'VariSkill | API 6ºSEM/2026',
+    type: 'academic',
+    category: 'Aplicação Web',
+    description:
+      'Desenvolvimento de uma plataforma inteligente de aprendizagem corporativa que personaliza trilhas de conhecimento de acordo com o nível e a evolução dos estudantes. A aplicação integra um assistente virtual baseado em Processamento de Linguagem Natural (PLN), capaz de fornecer suporte contextualizado durante as atividades, além de recursos de gamificação, como XP, níveis, streaks, insígnias e recompensas, para estimular o engajamento e a retenção do conhecimento.',
+    contribution:
+      'Atuei no desenvolvimento da identidade visual do projeto, sendo responsável pela concepção e definição dos elementos visuais da plataforma. Também participei ativamente do desenvolvimento frontend, implementando interfaces e componentes em React e TypeScript, com foco na usabilidade, responsividade e consistência visual da aplicação.',
+    softSkills:
+      'Criatividade e senso estético, atenção aos detalhes, pensamento centrado no usuário, colaboração em equipe, comunicação efetiva, organização e capacidade de transformar conceitos e requisitos em interfaces intuitivas e funcionais.',
+    technologies: [
+      'react',
+      'typescript',
+      'vite',
+      'python',
+      'django',
+      'postgresql',
+      'docker'
+    ],
+    image: variskillImg,
+    repoUrl: 'https://github.com/SkyFlyTeam/VariSkill-documentantion',
   },
   {
     id: "surface",

@@ -1,7 +1,10 @@
 import StarField from '@/components/ui/StarField'
 import { hero, site, socialLinks } from '@/data/site'
+import { useTypewriter } from '@/hooks/useTypewriter'
 
 export default function Hero() {
+  const { typed, done } = useTypewriter(site.name)
+
   return (
     <section
       id="home"
@@ -13,10 +16,20 @@ export default function Hero() {
         <div className="w-fit max-w-full">
           <p className="font-mono text-lg text-zinc-200 sm:text-xl">{hero.greeting}</p>
 
-          <h1 className="mt-4 text-4xl font-bold tracking-[0.06em] sm:text-6xl">{site.name}</h1>
+          <h1 aria-label={site.name} className="mt-4 grid text-4xl font-bold tracking-[0.06em] sm:text-6xl">
+            <span aria-hidden className="invisible col-start-1 row-start-1">
+              {site.name}
+            </span>
+            <span aria-hidden className="col-start-1 row-start-1">
+              {typed}
+              <span
+                className={`ml-1 inline-block h-[0.9em] w-[0.08em] translate-y-[0.1em] bg-bright-purple ${done ? 'animate-blink' : ''}`}
+              />
+            </span>
+          </h1>
 
-          <p className="mt-6 text-2xl tracking-[0.06em] sm:text-3xl">
-            {hero.rolePrefix} <span className="text-bright-purple">{hero.role}</span>
+          <p className="mt-6 text-md tracking-[0.06em] sm:text-xl max-w-180">
+            {hero.rolePrefix} <span className="text-bright-purple">{hero.role}</span>. {hero.additionalInfo}
           </p>
 
           <ul className="mt-10 flex gap-5">

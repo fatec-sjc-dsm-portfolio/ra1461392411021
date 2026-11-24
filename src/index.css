@@ -7,7 +7,7 @@
 
   /* Palette */
   --color-dark-purple: #24114c;
-  --color-bright-purple: #6627ec;
+  --color-bright-purple: #8F5BFF;
   --color-background: #0b091a;
   --color-dark-turquoise: #09304b;
   --color-accent: var(--color-bright-purple);
@@ -17,6 +17,13 @@
   --animate-scroll-hint: scroll-hint 2s ease-in-out infinite;
   --animate-modal-in: modal-in 0.25s ease-out;
   --animate-float: float 3s ease-in-out infinite;
+  --animate-blink: blink 1s step-end infinite;
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
 
   @keyframes float {
     0%,

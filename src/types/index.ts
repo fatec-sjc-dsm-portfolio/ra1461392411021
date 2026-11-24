@@ -8,6 +8,13 @@ export interface Technology {
   logo?: string
 }
 
+/** A broad capability card shown at the top of the Skills section. */
+export interface HighLevelAbility {
+  title: string
+  description: string
+  icon: IconType
+}
+
 export interface SkillCategory {
   title: string
   items: TechKey[]

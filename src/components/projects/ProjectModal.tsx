@@ -35,16 +35,16 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
             className="aspect-video w-full rounded-lg"
           />
 
-          <p className="mt-6 text-sm leading-relaxed tracking-wide text-zinc-300">
+          <p className="mt-6 text-sm leading-relaxed tracking-wide text-zinc-100">
             {project.details ?? project.description}
           </p>
 
           <DetailBlock title={labels.contributionLabel}>
-            <p className="text-sm leading-relaxed tracking-wide text-zinc-300">{project.contribution}</p>
+            <p className="text-sm leading-relaxed tracking-wide text-zinc-100">{project.contribution}</p>
           </DetailBlock>
 
           <DetailBlock title={labels.softSkillsLabel}>
-            <p className="text-sm leading-relaxed tracking-wide text-zinc-300">{project.softSkills}</p>
+            <p className="text-sm leading-relaxed tracking-wide text-zinc-100">{project.softSkills}</p>
           </DetailBlock>
 
           <DetailBlock title={labels.hardSkillsLabel}>

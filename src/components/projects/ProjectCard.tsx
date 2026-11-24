@@ -49,7 +49,7 @@ export default function ProjectCard({ project, onOpen }: ProjectCardProps) {
 
         <p className="mt-3 text-xs font-bold tracking-[0.15em] text-bright-purple uppercase">{category}</p>
 
-        <p className="mt-3 mb-4 text-xs leading-relaxed tracking-wide text-zinc-300">{description}</p>
+        <p className="mt-3 mb-4 text-xs leading-relaxed tracking-wide text-zinc-100">{description}</p>
 
         <TechTagList items={technologies} className="mt-auto" />
       </div>
