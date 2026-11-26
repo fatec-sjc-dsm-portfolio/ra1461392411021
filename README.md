@@ -1,6 +1,8 @@
 # Portfólio — Karen Gonçalves
 
-Portfólio pessoal de página única, com seções de apresentação, sobre mim, projetos e habilidades.
+Portfólio pessoal de página única, com seções de apresentação, sobre mim, projetos e habilidades. 
+
+Link: https://fatec-sjc-dsm-portfolio.github.io/ra1461392411021/
 
 Feito com **React**, **Vite**, **TypeScript** e **Tailwind CSS**.
 
